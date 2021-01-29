@@ -14,3 +14,4 @@
   * React.js
   * Node.js
   * MySQL
+  * Git
