@@ -1,0 +1,413 @@
+// 變數覆蓋需要在導入Bootstrap的Sass檔案之前
+// 參考Bootstrap的 _variables.scss
+// $primary: rgb(148, 36, 240);
+// $secondary: rgba(10, 10, 10, 0.842);
+
+// 導入bootstrap所有的樣式與預設變數
+@import '~bootstrap/scss/bootstrap.scss';
+
+// 其它要導入覆蓋掉原本的預設bootstrap樣式要放在這下面
+* {
+  box-sizing: border-box;
+}
+
+.breadcrumb {
+  background: white;
+  font-size: 14px;
+  // font-family: MontserratRegular;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
+}
+.breadcrumb a {
+  color: #353c1d;
+}
+
+.Sidebar {
+  // height: 100%;
+  // height: 80vh;
+  // width: 20%;
+  font-size: 16px;
+  // font-family: MontserratBoldItalic;
+  .SidebarList {
+    padding: 0;
+    // width: 100%;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: black;
+      transition: 0.1s;
+    }
+    .solid-bottom {
+      width: 75%;
+      margin: 0 auto;
+      border: solid #acc0d8 1px;
+    }
+    .row {
+      // height: 60px;
+      .icon {
+        transform: translate(0, -2px);
+      }
+    }
+    .row:hover {
+      cursor: pointer;
+      background-color: rgba(243, 112, 34, 0.3);
+    }
+    #active {
+      background-color: rgba(243, 112, 34, 0.3);
+    }
+  }
+}
+
+//會員後台
+.main {
+  .title {
+    font-size: 20px;
+    // font-family: MontserratBoldItalic;
+  }
+  .mail-wrap {
+    border: #d3d3d3 1px solid;
+    padding: 15px 0px 48px 0px;
+    margin-bottom: 50px;
+    min-height: 644px;
+  }
+  .titleIcon {
+    height: 37px;
+    width: 20px;
+    background: #353c1d;
+    margin: 0px 15px 0px 0px;
+  }
+  .titleContent {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    // height: 37px;
+    // padding: 12px 0px 0px 0px;
+  }
+  .linkTop {
+    width: 95%;
+    height: 1px;
+    margin: 16px auto;
+    border-top: solid #d3d3d3 2px;
+  }
+  // 我的信箱
+  .mailamount {
+    font-size: 16px;
+    // font-family: MontserratLight;
+  }
+  .mails {
+    // height: 75vh;
+    width: 95%;
+    border: 1px solid #707070;
+  }
+
+  // .close-icon:hover {
+  //   color: ;
+  // }
+  //
+  .MailList {
+    width: 100%;
+    .MailListItem {
+      // height: 120px;
+      div {
+        // font-size: 20px;
+        // font-family: MontserratBoldItalic;
+        ul .newstime {
+          font-size: 14px;
+          // font-family: MontserratLight;
+        }
+      }
+    }
+  }
+  // 訂單紀錄
+  .order-wrap {
+    /* background: cadetblue; */
+    border: #d3d3d3 1px solid;
+    /* height: 1000px; */
+    padding: 15px 0px 48px 0px;
+    margin: 0px 0px 50px 0px;
+    min-height: 644px;
+    .arrow-svg {
+      transition: 0.2s;
+    }
+    .arrow-actived {
+      transform: rotate(180deg);
+    }
+  }
+
+  .nav-link {
+    font-weight: 700;
+  }
+  .orders {
+    min-height: 500px;
+    .orderlist {
+      // border: 1px solid #707070;
+      font-size: 16px;
+      // font-family: MontserratSemiBold;
+      .solid-bottom {
+        width: 90%;
+        margin: 0 auto;
+        border: solid #acc0d8 1px;
+      }
+      .accordion button {
+        border-radius: 0px;
+      }
+    }
+  }
+
+  // 會員專區
+  .member1 {
+    height: 160px;
+    // border: solid #707070 1px;
+    // border-top: none;
+    // border-left: none;
+    // border-right: none;
+    .memberlist {
+      .listtitle {
+        font-size: 16px;
+        // font-family: MontserratBoldItalic;
+      }
+      .listtitle1 {
+        font-size: 14px;
+        // font-family: MontserratMedium;
+      }
+      .listnum {
+        font-size: 50px;
+        // font-family: MontserratBold;
+      }
+    }
+  }
+  .circle {
+    border: 2px solid #666;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: relative;
+    .circle-icon1 {
+      top: calc(50% - 45px);
+      left: calc(50% - 50px);
+      position: absolute;
+    }
+    .circle-icon2 {
+      top: calc(50% - 55px);
+      left: calc(50% - 60px);
+      position: absolute;
+    }
+    .active {
+      border: 2px solid orange;
+    }
+  }
+
+  .circle.active {
+    border: 2px solid orange;
+  }
+
+  .memberlv {
+    border: 2px solid #666;
+    border-radius: 10px 10px;
+    .solid-bottom {
+      width: 90%;
+      margin: 0 auto;
+      border-bottom: 2px solid #666;
+    }
+  }
+  .memberlv.active {
+    border: 2px solid orange;
+  }
+
+  // 蒐藏清單
+  .favorites-wrap {
+    /* background: cadetblue; */
+    border: #d3d3d3 1px solid;
+    /* height: 1000px; */
+    padding: 15px 0px 48px 0px;
+    margin: 0px 0px 50px 0px;
+    min-height: 644px;
+    input,
+    option,
+    select {
+      font-weight: 700;
+    }
+    .favorites-wrap-container {
+      width: 95% !important;
+    }
+  }
+
+  // 帳號設定
+  .setting {
+    /* background: cadetblue; */
+    border: #d3d3d3 1px solid;
+    min-height: 644px;
+
+    /* height: 1000px; */
+
+    padding: 15px 0px 40px 0px;
+    margin: 0px 0px 50px 0px;
+    div {
+      .titleIcon {
+        height: 37px;
+        width: 20px;
+        background: #353c1d;
+        margin: 0px 15px 0px 0px;
+      }
+      .titleContent {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        // height: 37px;
+        // padding: 12px 0px 0px 0px;
+      }
+    }
+
+    .form-label {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .setting-form input {
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 700;
+    }
+    .linkTop {
+      width: 95%;
+      height: 1px;
+      margin: 16px auto;
+      border-top: solid #d3d3d3 2px;
+    }
+
+    .btn {
+      background: #353c1d;
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      transition: 0.15s;
+    }
+
+    .btn:hover {
+      background: #353c1d;
+      // opacity: 0.8;
+      transform: scale(0.97);
+      color: #ffffff;
+      animation: 0.5s;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+    input[type='number'] {
+      -moz-appearance: textfield;
+    }
+  }
+
+  //
+  .coupon-wrap {
+    /* background: cadetblue; */
+    border: #d3d3d3 1px solid;
+    /* height: 1000px; */
+    padding: 15px 0px 48px 0px;
+    margin: 0px 0px 50px 0px;
+    min-height: 644px;
+  }
+  // 聯絡我們
+  .contact {
+    /* background: cadetblue; */
+    border: #d3d3d3 1px solid;
+    padding: 15px 0px 40px 0px;
+    margin-bottom: 50px;
+    min-height: 644px;
+    input,
+    select,
+    option,
+    textarea {
+      font-weight: 700;
+    }
+
+    .title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+
+    .titleIcon {
+      // height: 37px;
+      width: 20px;
+      background: #353c1d;
+      margin: 0px 15px 0px 0px;
+    }
+    .titleContent {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      // height: 37px;
+      // padding: 12px 0px 0px 0px;
+    }
+    .linkTop {
+      width: 95%;
+      height: 1px;
+      margin: 16px auto;
+      border-top: solid #d3d3d3 2px;
+    }
+
+    #content {
+      resize: none;
+      height: 200px;
+    }
+
+    .form-label {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .invalid-feedback {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+    }
+
+    .btn {
+      background: #353c1d;
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+
+    .btn:hover {
+      background: #353c1d;
+      // opacity: 0.8;
+      transform: scale(0.97);
+      color: #ffffff;
+      // animation: 0.5s;
+      transition: 0.15s;
+    }
+  }
+}
+
+@font-face {
+  font-family: 'MontserratLight';
+  src: url('../fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-family: 'MontserratBoldItalic';
+  src: url('../fonts/Montserrat-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'MontserratBold';
+  src: url('../fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'MontserratRegular';
+  src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'MontserratSemiBold';
+  src: url('../fonts/Montserrat-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'MontserratMedium';
+  src: url('../fonts/Montserrat-Medium.ttf');
+}

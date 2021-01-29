@@ -1,0 +1,116 @@
+/* * {
+  font-family: "Montserrat", sans-serif;
+} */
+
+/* 灰字 */
+.font-color-gray {
+  color: lightslategray;
+}
+
+/* 所有圖片撐飽飽 */
+/* img {
+  height: 100%;
+  width: 100%;
+} */
+
+/* 綠色勾勾 */
+.tick {
+
+}
+
+/* 目前所在頁 */
+.otherpage{
+  background:rgba(0, 0, 0 ,0.25); width: 50px;height: 50px; line-height: 50px; color:white;
+}
+
+.nowpage{
+  background:rgba(0, 0, 0 ,0.5); width: 50px;height: 50px; line-height: 50px; color:white;
+}
+
+.set-line-height {
+  line-height: 50px;
+}
+
+.choosing {
+  background: rgba(160, 160, 160, 0.5);
+}
+
+/* 信用卡專區 */
+.credit-card-info {
+
+}
+
+.credit-card-info-num {
+  margin: 8px 16px;
+   width: 20%;
+   font-weight: 700;
+
+}
+
+.credit-card-info-date {
+  margin: 8px 16px; width: 25%;  font-weight: 700;
+
+}
+
+.credit-card-info-savecode {
+  width: 20%;
+  margin: 8px 16px;
+  font-weight: 700;
+
+}
+
+.credit-card-info-owner {
+  margin: 8px 16px; width: 30%;
+  font-weight: 700;
+
+}
+
+/* 標題格式 */
+.title-template {
+  height: 37px; width: 20px; background: black;
+}
+
+.title-fontsize {
+  font-weight:bold; font-size: 20px;
+}
+
+/* 選擇城市/地區 */
+.choose-city-dropdown {
+}
+
+/* 選擇門市 */
+.store-info-textbox {
+}
+
+/* 發票資訊 */
+/* .invoice-info {
+} */
+
+/* 圖片尺寸 */
+.img-box {
+  height: 100px; width: 100px;
+}
+
+/* 右邊的結帳小區塊 */
+.order-summary {
+  height: 350px;
+  text-align: center;
+}
+
+/* 結帳最後一頁的訂單內容小標題專區 */
+.order-info-bigtitle {
+  font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.order-info-smalltitle {
+  font-weight: bold;
+}
+
+/* 結帳最後一頁的紅通通價格(最底下) */
+.final-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+}

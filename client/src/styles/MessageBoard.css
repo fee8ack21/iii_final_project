@@ -1,0 +1,65 @@
+.board {
+  margin: auto;
+  width: 50%;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+  letter-spacing: 0.2rem;
+}
+
+.myForm {
+  width: 100%;
+  background-color: #f3eee9;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.formField {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.myButton {
+  width: 100%;
+  background-color: #00b894;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.myList {
+  list-style: none;
+  overflow: hidden;
+  overflow: hidden;
+  padding: 0 0 1em;
+  border-bottom: 1px solid #ddd;
+  margin: 0 0 1em;
+  *zoom: 1;
+}
+.myName {
+  font-size: 25px;
+  font-weight: bold;
+}
+.myMessage {
+  font-size: 23px;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.myListButton {
+  display: inline-block;
+  height: auto;
+  width: auto;
+  border-radius: 7px;
+  border: 1px solid #00b894;
+  margin: 3px 5px;
+}

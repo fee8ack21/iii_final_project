@@ -1,0 +1,24 @@
+// 其它自訂樣式
+@import './styles/custom.scss';
+@import './styles/home.css';
+@import './styles/product_home.css';
+@import './styles/product_detail.css';
+@import './styles/about_us.css';
+@import './styles/news.css';
+@import './styles/clothing.css';
+@import './styles/shopping_cart.css';
+@import './styles/MessageBoard.css';
+@import './styles/checkout_system_style.css';
+@import './styles/dashboard.scss';
+@import './styles/clothingbackstage.scss';
+@import '~font-awesome/css/font-awesome.min.css'; // 全站都會使用的共同樣式
+
+// html {
+// font-size: 12px;
+// }
+// body {
+//   width: 100vw;
+//   height: 100vh;
+//   margin: 0;
+//   padding: 0;
+// }

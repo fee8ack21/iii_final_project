@@ -1,0 +1,314 @@
+.dashboard {
+  .main-aside {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+  }
+
+  .main-aside .logo-wrap a {
+    display: block;
+    height: 60px;
+    text-align: center;
+    border-right: 2px solid transparent;
+    background-color: #353c1d;
+  }
+
+  .main-aside .logo-wrap a img {
+    width: 45px;
+    object-fit: contain;
+    position: relative;
+    top: 6.86px;
+  }
+
+  .menu-ul {
+    background-color: #ecd5a3;
+    height: calc(100% - 60px);
+    overflow-y: scroll;
+  }
+
+  .menu-ul .menu-li .menu-a {
+    padding: 15px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: #353c1d;
+    text-decoration: none;
+    background-color: #ecd5a3;
+    cursor: pointer;
+    transition: 0.1s;
+    user-select: none;
+  }
+
+  .menu-ul .menu-li .menu-a:hover {
+    background-color: rgba(246, 246, 247, 0.4);
+  }
+
+  .menu-ul .menu-li .menu-a i {
+    width: 30px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px 12px;
+    user-select: none;
+  }
+
+  .menu-ul .menu-li .menu-a .fa-angle-down {
+    padding-right: 0px !important;
+    transition: 0.2s;
+  }
+
+  .menu-ul .menu-li .menu-inner-ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.1s;
+    user-select: none;
+  }
+  .active-inner-ul {
+    max-height: 800px !important;
+  }
+  .menu-li .menu-inner-ul li a {
+    background-color: rgba(246, 246, 247, 0.4);
+    display: block;
+    padding: 15px 0px 15px 50px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    color: #353c1d;
+    transition: 0.2s;
+    user-select: none;
+  }
+
+  .menu-li .menu-inner-ul li a:hover {
+    padding: 15px 0px 15px 65px;
+  }
+
+  /* main-aside end */
+  /* main-main start */
+
+  .main-main {
+    min-height: calc(100vh - 60px);
+    margin-left: 250px;
+    position: relative;
+  }
+
+  /* main-main nav start */
+
+  .main-main .main-nav {
+    width: calc(100% - 250px);
+    position: fixed;
+    height: 60px;
+    background-color: #353c1d;
+    top: 0px;
+    z-index: 9999;
+  }
+
+  .main-main .main-nav .main-nav-ul {
+    display: flex;
+  }
+
+  .main-nav-ul .main-nav-ul-li .nav-a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    position: relative;
+  }
+
+  .main-nav-ul .main-nav-ul-li .nav-a i {
+    font-size: 24px;
+    transition: 0.1s;
+    color: white;
+    line-height: 60px;
+  }
+
+  .main-nav-ul .main-nav-ul-li .nav-a .bell-badge {
+    font-size: 12px;
+    color: white;
+    background-color: red;
+    display: block;
+    padding: 0px 5.875px 0px 5.875px;
+    border-radius: 10px;
+    text-align: center;
+    top: 13px;
+    left: 17px;
+    position: absolute;
+    line-height: 20px;
+  }
+
+  .main-nav-ul .setting-li {
+    display: flex;
+    align-items: center;
+  }
+
+  .main-nav-ul .setting-li .setting-li-a {
+    width: 100px;
+    box-sizing: border-box;
+    display: flex;
+    padding: 0px 15px 0px 15px;
+    justify-content: space-between;
+    background-color: rgb(255, 136, 17);
+    border-radius: 5px;
+    transition: 0.1s;
+    z-index: 1;
+  }
+
+  .main-nav-ul .setting-li .setting-li-a:hover {
+    background-color: #f37022 !important;
+  }
+
+  .main-nav-ul .setting-li .setting-li-a i {
+    line-height: 40px;
+    width: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .main-nav-ul .setting-li .setting-inner-ul {
+    width: 100px;
+    max-height: 0px;
+    padding-top: 3px;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    transition: 0.1s;
+    top: 43px;
+    background-color: transparent;
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  .main-nav-ul .setting-li .setting-inner-ul li a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px 15px;
+    line-height: 20px;
+  }
+
+  .setting-inner-ul li a .setting-word:hover {
+    text-decoration: underline;
+  }
+
+  .setting-inner-ul li a i {
+    width: 20px;
+    font-size: 20px;
+    padding-right: 5px;
+    text-align: center;
+  }
+
+  /* main-main nav end */
+  /* main-main content start */
+
+  .main-content {
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 60px;
+    min-height: calc(100vh - 118px);
+  }
+
+  .main-content .breadcrumb-nav {
+    margin-bottom: 20px;
+  }
+
+  .main-content .breadcrumb-nav .breadcrumb {
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .breadcrumb-nav .breadcrumb .breadcrumb-split {
+    padding: 0px 5px 0px 5px;
+    color: #353c1d;
+    font-weight: 700;
+  }
+
+  .breadcrumb-nav .breadcrumb .breadcrumb-actived {
+    color: #353c1d;
+    text-decoration: none;
+  }
+
+  .breadcrumb-nav .breadcrumb .breadcrumb-actived:hover {
+    text-decoration: underline;
+  }
+
+  .breadcrumb-nav .breadcrumb .breadcrumb-disabled {
+    color: olive;
+    text-decoration: none;
+    pointer-events: none;
+  }
+
+  /* main-main content end */
+  /* main-main end */
+  /* main-footer start */
+
+  .main-footer {
+    padding: 20px 0 20px 0;
+    background-color: white !important;
+  }
+
+  .main-footer .go-top {
+    display: inline-block;
+    position: fixed;
+    bottom: 52px;
+    right: 52px;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: rgba(53, 60, 29, 0.9);
+    color: white;
+    transition: 0.2s;
+  }
+
+  .main-footer .go-top:hover {
+    transform: scale(1.1);
+  }
+
+  .main-footer p {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0px;
+    color: #353c1d !important;
+    font-weight: 500;
+  }
+
+  /* main-footer end */
+  /* toggle classlist start */
+
+  .open .icon-rotate {
+    transform-origin: center;
+    transform: rotate(180deg);
+  }
+
+  .open .menu-a {
+    background-color: #f37022 !important;
+    color: white !important;
+  }
+
+  .open .menu-inner-ul {
+    max-height: 1000px !important;
+    overflow: visible !important;
+  }
+
+  .setting-open .setting-li-a {
+    background-color: #f37022 !important;
+  }
+
+  .setting-open .setting-inner-ul {
+    max-height: 1000px !important;
+    overflow: visible !important;
+    z-index: 0 !important;
+    background-color: #f37022 !important;
+  }
+
+  .setting-open .nav-a .fa-caret-down {
+    transform: rotate(180deg) !important;
+  }
+
+  /* toggle classlist end */
+}

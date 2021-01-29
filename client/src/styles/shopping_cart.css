@@ -1,0 +1,550 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  letter-spacing: 0.2rem;
+}
+
+.product-detail-header {
+  /* height: 600px; */
+  /* overflow-x: hidden; */
+}
+
+.navbar-brand img {
+  width: 60px;
+}
+@media (min-width: 768px) {
+  .navbar-brand img {
+    width: 85px;
+  }
+}
+
+.product-detail-header .main-navbar .navbar-menu a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #353c1d;
+  /* transition: 0.15s; */
+}
+.product-detail-header .main-navbar .navbar-menu a:hover {
+  color: #353c1d;
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .product-detail-header .main-navbar .navbar-menu {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-left: -300px;
+    background-color: white;
+    text-align: center;
+    z-index: 999;
+  }
+  .product-detail-header .main-navbar .navbar-menu a {
+    font-size: 36px;
+    color: #353c1d;
+    transition: 0.15s;
+    font-weight: 500;
+  }
+}
+
+.product-detail-header .main-navbar .navbar-icon a {
+  transition: 0.15s;
+}
+.product-detail-header .navbar-icon .nav-item > a:hover {
+  color: #353c1d;
+}
+
+.main-navbar .navbar-icon a img {
+  width: 30px;
+}
+@media (min-width: 992px) {
+  .main-navbar .navbar-icon a img {
+    width: 20px;
+  }
+}
+
+/*  */
+.search-icon-input-wrap {
+  width: 150px;
+}
+.search-icon-input-wrap input {
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #353c1d;
+  width: 100%;
+  height: 100%;
+  color: #353c1d;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+.search-icon-input-wrap input:focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #353c1d;
+  outline: none;
+}
+.search-icon-input-wrap input:active {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #353c1d;
+  outline: none;
+}
+/*  */
+
+.profile-icon-wrap{
+  display: none;
+  width: 150px;
+  transform: translateX(-60%);
+  z-index: 888;
+}
+.profile-navbar-li:hover .profile-icon-wrap{
+  display: block !important;
+}
+.main-navbar .navbar-icon .profile-icon-wrap:hover{
+  display: block !important;
+}
+
+.main-navbar .navbar-icon .profile-icon-ul-wrap {
+  background-color: white;
+  border: 1px solid #353c1d;
+  text-align: center;
+}
+
+
+.main-navbar .navbar-icon .profile-icon-ul-wrap::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-left: 1px solid #353c1d;
+  border-top: 1px solid #353c1d;
+  z-index: 999;
+  position: absolute;
+  transform: rotate(45deg);
+  top: -8px;
+  right: 23px;
+}
+
+.main-navbar .navbar-icon .profile-icon-ul a {
+  color: black;
+  font-size: 14px;
+}
+
+/*  */
+.cart-icon-wrap{
+  display: none;
+  width: 270px;
+  left: 0%;
+  transform: translateX(-78%);
+  /* top: 55px; */
+  z-index: 888;
+}
+.cart-navbar-li:hover .cart-icon-wrap{
+  display: block !important;
+}
+.main-navbar .navbar-icon .cart-icon-wrap:hover{
+  display: block !important;
+}
+
+.main-navbar .navbar-icon .cart-icon-ul-wrap {
+  background-color: white;
+  border: 1px solid #353c1d;
+  text-align: center;
+}
+.main-navbar .navbar-icon .cart-icon-ul-wrap::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-left: 1px solid #353c1d;
+  border-top: 1px solid #353c1d;
+  z-index: 999;
+  position: absolute;
+  transform: rotate(45deg);
+  top: -8px;
+  right: 23px;
+}
+
+.navbar-icon .cart-icon-ul .content-img img {
+  width: 100% !important;
+  height: 44px;
+  object-fit: cover;
+}
+
+.navbar-icon .cart-icon-ul .content-word p {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main-navbar .navbar-icon .cart-icon-ul a {
+  color: black;
+  font-size: 14px;
+}
+
+.total-price-wrap p {
+  font-size: 14px;
+}
+.checkout-btn-wrap a {
+  border: 1px solid black;
+}
+.checkout-btn-wrap .see-cart-btn {
+  transition: 0.15s;
+  color: black;
+} 
+.checkout-btn-wrap .see-cart-btn:hover{
+  transform: scale(0.97);
+} 
+.checkout-btn-wrap .go-check-btn{
+  transition: 0.15s;
+ color: white; 
+ background-color: black; 
+}
+
+.checkout-btn-wrap .go-check-btn:hover{
+  transform: scale(0.97);
+
+}
+
+/*  */
+/* .product-home-header .category-choose {
+  margin-top: 200px;
+}
+
+.product-home-header .category-choose .category-choose-btn {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  transition: 0.15s;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.product-home-header .category-choose .category-choose-btn:hover {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.product-home-header .category-choose li a {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  transition: 0.15s;
+  font-weight: 700;
+}
+
+.product-home-header .category-choose li a:hover {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: underline;
+} */
+/*  */
+.sign-up-modal,
+.log-in-modal,
+.certificate-modal,
+.certificate-send-modal {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+}
+
+.sign-up-content,
+.log-in-content,
+.certificate-content,
+.certificate-send-content {
+  width: 500px;
+}
+
+.sign-up-content .content-top,
+.log-in-content .content-top,
+.certificate-content .content-top,
+.certificate-send-content .content-top {
+  background: white;
+
+  height: 227px;
+  width: 100%;
+  background-image: url(../images/素材/物件素材/pngkey.com-vector-shapes-png-524001.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sign-up-content .content-bottom,
+.log-in-content .content-bottom,
+.certificate-content .content-bottom,
+.certificate-send-content .content-bottom {
+  background: white;
+}
+
+.sign-up-content .content-bottom label,
+.sign-up-content .content-bottom input,
+.log-in-content .content-bottom label,
+.log-in-content .content-bottom input,
+.certificate-content .content-bottom label,
+.certificate-content .content-bottom input,
+.certificate-send-content .content-bottom label,
+.certificate-send-content .content-bottom input {
+  cursor: pointer;
+}
+/*  */
+.log-in-cancel-btn-wrap a ,.sign-up-cancel-btn-wrap a ,.certificate-cancel-btn-wrap a{
+  transition: 0.15s;
+}
+
+.log-in-cancel-btn-wrap a:hover, .sign-up-cancel-btn-wrap a:hover ,.certificate-cancel-btn-wrap a:hover{
+  transform: scale(0.97);
+}
+/*  */
+.product-hover-menu-wrap{
+  top: 145px;
+  padding-top: 8.41px;
+  display: none;
+  z-index: 9999;
+}
+
+.product-hover-menu ul li a {
+  color: black;
+  font-size: 12px;
+}
+/*  */
+
+/* 灰字 */
+.font-color-gray {
+  color: lightslategray;
+}
+
+/* 所有圖片撐飽飽 */
+/* img {
+  height: 100%;
+  width: 100%;
+} */
+
+/* 綠色勾勾 */
+.tick {
+
+}
+
+/* 目前所在頁 */
+.otherpage {
+  background: rgba(0, 0, 0, 0.25);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+}
+
+.nowpage {
+  background: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+}
+
+.set-line-height {
+  line-height: 50px;
+}
+
+.choosing {
+  background: rgba(160, 160, 160, 0.5);
+}
+
+/* 信用卡專區 */
+.credit-card-info {
+
+}
+
+.credit-card-info-num {
+  margin: 8px 16px;
+  width: 20%;
+  font-weight: 700;
+}
+
+.credit-card-info-date {
+  margin: 8px 16px; width: 25%;
+  font-weight: 700;
+
+}
+
+.credit-card-info-savecode {
+  width: 20%;
+  margin: 8px 16px;
+  font-weight: 700;
+}
+
+.credit-card-info-owner {
+  margin: 8px 16px; width: 30%;
+  font-weight: 700;
+
+}
+
+/* 標題格式 */
+.title-template {
+  height: 37px;
+  width: 20px;
+  background: black;
+}
+
+.title-fontsize {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* 選擇城市/地區 */
+.choose-city-dropdown {
+
+}
+
+/* 選擇門市 */
+.store-info-textbox {
+}
+
+/* 發票資訊 */
+/* .invoice-info {
+} */
+
+/* 圖片尺寸 */
+.img-box {
+  height: 100px; width: 100px;
+}
+
+/* 右邊的結帳小區塊 */
+.order-summary {
+  height: 350px;
+  text-align: center;
+}
+
+/* 結帳最後一頁的訂單內容小標題專區 */
+.order-info-bigtitle {
+  font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.order-info-smalltitle {
+  font-weight: bold;
+}
+
+/* 結帳最後一頁的紅通通價格(最底下) */
+.final-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+}
+
+.payment-tab-wrap .nav-tabs .nav-link{
+  border: none;
+  margin: 0px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/*  */
+
+/*  */
+.go-top {
+  bottom: 30px;
+  right: 30px;
+  transition: 0.15s;
+
+}
+
+.go-top:hover{
+  transform: scale(0.97);
+}
+.go-top i {
+  color: white;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  background-color: #f37022;
+  border-radius: 50%;
+  line-height: 35px;
+}
+
+.go-top span {
+  color: black;
+  font-style: italic;
+  font-weight: 800;
+}
+@media (min-width: 768px) {
+  .go-top {
+    bottom: 30px;
+    right: 30px;
+  }
+
+  .go-top i {
+    color: white;
+    font-size: 20px;
+    width: 55px;
+    height: 55px;
+    background-color: #f37022;
+    border-radius: 50%;
+    line-height: 55px;
+  }
+
+  .go-top span {
+    color: black;
+    font-style: italic;
+    font-weight: 800;
+  }
+}
+
+/*  */
+.main-footer {
+  background-color: #353c1d;
+}
+
+.main-footer .footer-content {
+  padding: 48px 0 48px 0;
+}
+@media (min-width: 768px) {
+  .main-footer .footer-content {
+    padding: 180px 0 180px 0;
+  }
+}
+
+.main-footer .footer-slogan h2 {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 26px;
+  color: rgba(255, 255, 255, 1);
+}
+@media (min-width: 768px) {
+  .main-footer .footer-slogan h2 {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 46px;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+.main-footer .footer-contact li {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+}
+
+.main-footer .footer-contact li a {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+}
+
+.main-footer .footer-icon li a {
+  /* font-size: 22px; */
+}
+
+.main-footer .footer-copyright {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 1);
+}
